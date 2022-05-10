@@ -20,7 +20,7 @@ describe("StatisticsTest",function(){
         const stats=getStatistics(numbers);
         
        
-        expect(stats.min).toBeNaN();
+        expect(stats.average).toBeNaN();
         // All fields of computedStats (average, max, min) must be
         // NAN (not-a-number)
         // Design the expect statement here.
