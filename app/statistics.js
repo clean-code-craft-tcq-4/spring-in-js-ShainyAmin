@@ -32,12 +32,12 @@ module.exports=function getStatistics(numbers){
 
 }
 
-module.exports = class StatsAlerter {
-    constructor(maxThreshold,alerters){
+function StatsAlerter(maxThreshold,alerters) {
+   
         this.maxThreshold = maxThreshold;
         this.alerters = alerters;
        
-    }
+    
          checkAndAlert(numbers) {
              console.log(this.alerters)
              numbers.forEach((num) =>{
@@ -63,6 +63,8 @@ class LEDAlert {
     }
 }
 
-  
+  model.exports = {
+      StatsAlerter: StatsAlerter
+  }
 
 
