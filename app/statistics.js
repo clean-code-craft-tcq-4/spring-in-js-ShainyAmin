@@ -8,7 +8,7 @@ module.exports=function getStatistics(numbers){
                     if(ele > max){
                         max = ele;
                          }
-                    if(ele > min) {
+                    if(ele < min) {
                     min = ele;
                     }
                    total += ele;
