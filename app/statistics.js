@@ -14,7 +14,9 @@ module.exports=function getStatistics(numbers){
                    total += ele;
                     })
      var average = total/(numbers.length);
-     return [max, min, average];
+     return {"min": min,
+            "max": max,
+            "average":average};
 
 }
 
