@@ -32,14 +32,14 @@ module.exports=function getStatistics(numbers){
 
 }
 
-function StatsAlerter(maxThreshold,alerters) {
+function StatsAlerter(maxThreshold,alerters){
    
         this.maxThreshold = maxThreshold;
         this.alerters = alerters;
        
     
-         checkAndAlert(numbers) {
-             console.log(this.alerters)
+         checkAndAlert(numbers){
+            
              numbers.forEach((num) =>{
              if( num > this.maxThreshold) {
                 this.alerters[0].emailSent();
