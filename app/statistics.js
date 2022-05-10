@@ -63,10 +63,6 @@ class LEDAlert {
     }
 }
 
-    const emailAlert=new EmailAlert();
-    const ledAlert=new LEDAlert();
-
-var statsAlerter = new StatsAlerter(10.2, [emailAlert,ledAlert]);
-
+  
 
 
