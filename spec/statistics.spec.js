@@ -21,6 +21,8 @@ describe("StatisticsTest",function(){
         
        
         expect(stats.average).toBeNaN();
+         expect(stats.max).toBeNaN();
+         expect(stats.min).toBeNaN();
         // All fields of computedStats (average, max, min) must be
         // NAN (not-a-number)
         // Design the expect statement here.
