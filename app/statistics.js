@@ -67,4 +67,4 @@ class LEDAlert {
       StatsAlerter: StatsAlerter
   }
 
-
+export default
