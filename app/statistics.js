@@ -32,3 +32,41 @@ module.exports=function getStatistics(numbers){
 
 }
 
+module.exports = class StatsAlerter {
+    constructor(maxThreshold,alerters){
+        this.maxThreshold = maxThreshold;
+        this.alerters = alerters;
+       
+    }
+         checkAndAlert(numbers) {
+             console.log(this.alerters)
+             numbers.forEach((num) =>{
+             if( num > this.maxThreshold) {
+                this.alerters[0].emailSent();
+                this.alerters[1].ledGlows();
+             }
+             })
+            
+        }
+    }
+
+class EmailAlert {
+   emailSent() {
+       console.log(true);
+       return true;
+   }
+}
+
+class LEDAlert {
+    ledGlows() {
+        return true;
+    }
+}
+
+    const emailAlert=new EmailAlert();
+    const ledAlert=new LEDAlert();
+
+var statsAlerter = new StatsAlerter(10.2, [emailAlert,ledAlert]);
+
+
+
