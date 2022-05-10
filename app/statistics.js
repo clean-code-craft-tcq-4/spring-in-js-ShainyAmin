@@ -4,7 +4,7 @@ module.exports=function getStatistics(numbers){
     var min = numbers[0];
     var max = numbers[0];
     var total = 0;
-    numbers.forEach(funtion(ele) {
+    numbers.forEach((ele) => {
                     if(ele > max){
                         max = ele;
                          }
