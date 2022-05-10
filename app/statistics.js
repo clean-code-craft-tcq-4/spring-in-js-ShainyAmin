@@ -38,7 +38,7 @@ function StatsAlerter(maxThreshold,alerters){
         this.alerters = alerters;
        
     
-         checkAndAlert(numbers){
+         function checkAndAlert(numbers){
             
              numbers.forEach((num) =>{
              if( num > this.maxThreshold) {
