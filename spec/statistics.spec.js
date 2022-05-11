@@ -6,7 +6,7 @@ describe("StatisticsTest",function(){
         const r3 = 3.2;
         const r4= 4.5;
         const numbers=[r1,r2,r3,r4];
-        const stats=getStatistics(numbers);
+        const stats=new getStatistics(numbers);
         const epsilon=0.001;
 
         expect(Math.abs((stats.min-1.5))).toBeLessThan(epsilon);
