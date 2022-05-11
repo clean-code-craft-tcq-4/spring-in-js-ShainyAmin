@@ -1,6 +1,6 @@
 // const numbers = process.argv.slice(2);
     //implement the computation of statistics here
-const getStatistics = (numbers) => {
+function getStatistics(numbers) {
     var min = numbers[0];
     var max = numbers[0];
     var total = 0;
