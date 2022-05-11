@@ -2,9 +2,8 @@
     //implement the computation of statistics here
 
  module.exports = {
-      StatsAlerter: StatsAlerter,
-      LEDAlert: LEDAlert,
-      EmailAlert: EmailAlert,
+    
+     
       getStatistics
   }
   
@@ -44,35 +43,25 @@ function getStatistics(numbers) {
 }
 
 
-function StatsAlerter(maxThreshold,alerters){
+// function StatsAlerter(maxThreshold,alerters){
    
-        this.maxThreshold = maxThreshold;
-        this.alerters = alerters;
+//         this.maxThreshold = maxThreshold;
+//         this.alerters = alerters;
        
     
-         function checkAndAlert(numbers){
+//          function checkAndAlert(numbers){
             
-             numbers.forEach((num) =>{
-             if( num > this.maxThreshold) {
-                this.alerters[0].emailSent();
-                this.alerters[1].ledGlows();
-             }
-             })
+//              numbers.forEach((num) =>{
+//              if( num > this.maxThreshold) {
+//                 this.alerters[0].emailSent();
+//                 this.alerters[1].ledGlows();
+//              }
+//              })
             
-        }
-    }
+//         }
+//     }
 
-function EmailAlert(){
-  function emailSent(){
-       console.log(true);
-       return true;
-   }
-}
 
-function LEDAlert(){
-  function ledGlows(){
-        return true;
-    }
-}
+
 
  
