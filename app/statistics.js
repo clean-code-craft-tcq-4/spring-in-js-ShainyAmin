@@ -1,5 +1,14 @@
 // const numbers = process.argv.slice(2);
     //implement the computation of statistics here
+
+ module.exports = {
+      StatsAlerter: StatsAlerter,
+      LEDAlert: LEDAlert,
+      EmailAlert: EmailAlert,
+      getStatistics
+  }
+  
+
 function getStatistics(numbers) {
     var min = numbers[0];
     var max = numbers[0];
@@ -64,10 +73,4 @@ function LEDAlert(){
     }
 }
 
-  module.exports = {
-      StatsAlerter: StatsAlerter,
-      LEDAlert: LEDAlert,
-      EmailAlert: EmailAlert,
-      getStatistics
-  }
-  
+ 
