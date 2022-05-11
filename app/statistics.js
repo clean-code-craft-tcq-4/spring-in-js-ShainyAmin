@@ -13,7 +13,7 @@ function getStatistics(numbers) {
     var min = numbers[0];
     var max = numbers[0];
     var total = 0;
-  if(numbers.length != 1) {
+  if(numbers.length != 0) {
         numbers.forEach((ele) =>
      {
                     if(ele > max){
