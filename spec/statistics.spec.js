@@ -29,6 +29,10 @@ describe("StatisticsTest",function(){
         // Use https://www.w3schools.com/jsref/jsref_isnan.asp
         
     })
+    
+    const EmailAlert = require("../app/emailAlert");
+    const LEDAlert = require("../app/ledAlert"); 
+    const StatsAlerter = require("../app/statsAlerter"); 
     it("raises alerts when max is greater than threshold",function(){
          const emailAlert=new EmailAlert();
          const ledAlert=new LEDAlert();
