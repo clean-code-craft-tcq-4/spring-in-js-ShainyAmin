@@ -63,7 +63,7 @@ class LEDAlert {
     }
 }
 
-  model.exports = {
+  module.exports = {
       StatsAlerter: StatsAlerter
   }
 
