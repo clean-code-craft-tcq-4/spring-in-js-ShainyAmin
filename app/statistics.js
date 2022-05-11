@@ -1,9 +1,9 @@
-const numbers = process.argv[2]
+const numbers = process.argv.slice(2);
     //implement the computation of statistics here
     var min = numbers[0];
     var max = numbers[0];
     var total = 0;
-  if(numbers.length != 0) {
+  if(numbers.length != 1) {
         numbers.forEach((ele) =>
      {
                     if(ele > max){
