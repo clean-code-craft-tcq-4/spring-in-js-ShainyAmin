@@ -17,7 +17,7 @@ describe("StatisticsTest",function(){
     
     it("reportsNaNForEmptyInput",function(){
         const numbers=[];
-        const stats=getStatistics(numbers);
+        const stats=getStatistics.getStatistics(numbers);
         
        
         expect(stats.average).toBeNaN();
