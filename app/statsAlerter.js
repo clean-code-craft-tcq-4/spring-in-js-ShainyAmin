@@ -1,4 +1,6 @@
  module.exports = {  StatsAlerter: StatsAlerter }
+var EmailAlert  = require("./emailAlert");
+var LEDAlert   = require("./ledAlert");
 
 function StatsAlerter(maxThreshold,alerters){
    
