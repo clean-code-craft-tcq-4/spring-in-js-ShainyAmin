@@ -1,5 +1,4 @@
-module.exports=function getStatistics(numbers){
-    
+const numbers = process.argv[2]
     //implement the computation of statistics here
     var min = numbers[0];
     var max = numbers[0];
@@ -26,11 +25,8 @@ module.exports=function getStatistics(numbers){
         }
     
      var average = total/(numbers.length);
-     return {"min": min,
-            "max": max,
-            "average":average};
+   
 
-}
 
 function StatsAlerter(maxThreshold,alerters){
    
@@ -50,21 +46,26 @@ function StatsAlerter(maxThreshold,alerters){
         }
     }
 
-class EmailAlert {
-   emailSent() {
+function EmailAlert(){
+  function emailSent(){
        console.log(true);
        return true;
    }
 }
 
-class LEDAlert {
-    ledGlows() {
+function LEDAlert(){
+  function ledGlows(){
         return true;
     }
 }
 
   module.exports = {
-      StatsAlerter: StatsAlerter
+      StatsAlerter: StatsAlerter,
+      LEDAlert: LEDAlert,
+      EmailAlert: EmailAlert
   }
+  return {"min": min,
+            "max": max,
+            "average":average};
 
 
