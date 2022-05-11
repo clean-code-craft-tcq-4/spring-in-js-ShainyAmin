@@ -35,6 +35,8 @@ function getStatistics(numbers) {
         }
     
      var average = total/(numbers.length);
+    if(average == 0)
+        average = NaN;
    return {"min": min,
             "max": max,
             "average":average};
