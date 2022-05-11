@@ -1,6 +1,6 @@
 // const numbers = process.argv.slice(2);
     //implement the computation of statistics here
-function getStatistics(numbers) {
+const getStatistics = (numbers) => {
     var min = numbers[0];
     var max = numbers[0];
     var total = 0;
@@ -67,6 +67,7 @@ function LEDAlert(){
   module.exports = {
       StatsAlerter: StatsAlerter,
       LEDAlert: LEDAlert,
-      EmailAlert: EmailAlert
+      EmailAlert: EmailAlert,
+      getStatistics
   }
   
