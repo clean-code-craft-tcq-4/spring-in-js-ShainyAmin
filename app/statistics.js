@@ -1,5 +1,6 @@
-const numbers = process.argv.slice(2);
+// const numbers = process.argv.slice(2);
     //implement the computation of statistics here
+function getStatistics(numbers) {
     var min = numbers[0];
     var max = numbers[0];
     var total = 0;
@@ -25,7 +26,11 @@ const numbers = process.argv.slice(2);
         }
     
      var average = total/(numbers.length);
-   
+   return {"min": min,
+            "max": max,
+            "average":average};
+
+}
 
 
 function StatsAlerter(maxThreshold,alerters){
@@ -64,8 +69,4 @@ function LEDAlert(){
       LEDAlert: LEDAlert,
       EmailAlert: EmailAlert
   }
-  return {"min": min,
-            "max": max,
-            "average":average};
-
-
+  
