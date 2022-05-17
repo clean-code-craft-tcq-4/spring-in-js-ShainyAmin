@@ -2,7 +2,7 @@
           EmailAlert: EmailAlert}
 
 function EmailAlert(){
-  function ledGlows(){
+  function emailSent(){
         return true;
     }
 }
