@@ -13,7 +13,7 @@ function StatsAlerter(maxThreshold,alerters){
              numbers.forEach((num) =>{
              if( num > this.maxThreshold) {
                 this.alerters[0].emailSent = true;
-                this.alerters[1].ledGlows();
+                this.alerters[1].ledGlows = true;
              }
              })
             
