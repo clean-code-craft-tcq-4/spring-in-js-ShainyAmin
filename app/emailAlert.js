@@ -1,7 +1,7 @@
 //  module.exports = {
 //           EmailAlert: EmailAlert}
 
-class EmailAlert(){
+class EmailAlert {
   function emailSent(){
         return true;
     }
