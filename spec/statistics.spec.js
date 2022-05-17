@@ -45,7 +45,7 @@ describe("StatisticsTest",function(){
          statsAlerter.checkAndAlert([99.8, 34.2, 4.5, 6.7]);
          console.log("emailAlert.emailSent",typeof emailAlert.emailSent);
          expect(emailAlert.emailSent).toEqual(true);
-         expect(ledAlert.ledGlows).tobe(true);
+         expect(ledAlert.ledGlows).toEqual(true);
 
         
         
