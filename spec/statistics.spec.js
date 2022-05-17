@@ -30,9 +30,12 @@ describe("StatisticsTest",function(){
         
     })
     
-    const EmailAlert = require("../app/emailAlert");
-    const LEDAlert = require("../app/ledAlert"); 
-    const StatsAlerter = require("../app/statsAlerter"); 
+//     const EmailAlert = require("../app/emailAlert");
+//     const LEDAlert = require("../app/ledAlert"); 
+//     const StatsAlerter = require("../app/statsAlerter"); 
+    import EmailAlert from '../app/emailAlert'
+    import LEDAlert from '../app/ledAlert'
+    import StatsAlerter from '../app/statsAlerter'
     it("raises alerts when max is greater than threshold",function(){
          const emailAlert=new EmailAlert();
          const ledAlert=new LEDAlert();
