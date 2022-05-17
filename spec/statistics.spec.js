@@ -31,7 +31,7 @@ describe("StatisticsTest",function(){
     })
     
     const EmailAlert = require("../app/emailAlert").EmailAlert;
-    const LEDAlert = require("../app/ledAlert"); 
+    const LEDAlert = require("../app/ledAlert").LEDAlert; 
     const StatsAlerter = require("../app/statsAlerter"); 
    
     it("raises alerts when max is greater than threshold",function(){
