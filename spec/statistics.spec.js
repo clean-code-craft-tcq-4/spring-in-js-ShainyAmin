@@ -30,7 +30,7 @@ describe("StatisticsTest",function(){
         
     })
     
-    const EmailAlert = require("../app/emailAlert");
+    const EmailAlert = require("../app/emailAlert").default;
     const LEDAlert = require("../app/ledAlert"); 
     const StatsAlerter = require("../app/statsAlerter"); 
    
