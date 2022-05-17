@@ -1,7 +1,7 @@
 module.exports = {LEDAlert: LEDAlert}
 
 function LEDAlert(){
-  function ledGlows(){
+  this.ledGlows = function(){
       
        return true;
    }
