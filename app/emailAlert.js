@@ -2,7 +2,7 @@
 //           EmailAlert: EmailAlert}
 
 class EmailAlert {
-  function emailSent(){
+   emailSent(){
         return true;
     }
 }
