@@ -1,8 +1,9 @@
- module.exports = {
-          EmailAlert: EmailAlert}
+//  module.exports = {
+//           EmailAlert: EmailAlert}
 
-function EmailAlert(){
+class EmailAlert(){
   function emailSent(){
         return true;
     }
 }
+export default EmailAlert;
