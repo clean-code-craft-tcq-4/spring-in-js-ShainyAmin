@@ -2,7 +2,7 @@
           EmailAlert: EmailAlert}
 
 function EmailAlert() {
-   this.emailSent = function(){
+   this.emailSent = function {
         return true;
     }
 }
