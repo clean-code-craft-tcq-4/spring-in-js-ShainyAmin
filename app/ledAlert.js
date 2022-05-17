@@ -1,7 +1,7 @@
 module.exports = {LEDAlert: LEDAlert}
 
-function EmailAlert(){
-  function emailSent(){
+function LEDAlert(){
+  function ledGlows(){
       
        return true;
    }
