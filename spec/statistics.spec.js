@@ -17,7 +17,7 @@ describe("StatisticsTest",function(){
     
     it("reportsNaNForEmptyInput",function(){
         const numbers=[];
-        const stats=getStatistics.getStatistics(numbers);
+        const stats=getStatistics(numbers);
         
        
         expect(stats.average).toBeNaN();
@@ -32,7 +32,7 @@ describe("StatisticsTest",function(){
     
     const EmailAlert = require("../app/emailAlert").EmailAlert;
     const LEDAlert = require("../app/ledAlert").LEDAlert; 
-    const StatsAlerter = require("../app/statsAlerter"); 
+    const StatsAlerter = require("../app/statsAlerter").StatsAlerter; 
    
     it("raises alerts when max is greater than threshold",function(){
          const emailAlert=new EmailAlert();
