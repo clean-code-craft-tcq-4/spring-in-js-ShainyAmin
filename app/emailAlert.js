@@ -2,6 +2,6 @@
           EmailAlert: EmailAlert}
 
 function EmailAlert() {
-   this.emailSent = true;
+   this.emailSent = false;
 }
 // export default EmailAlert;
